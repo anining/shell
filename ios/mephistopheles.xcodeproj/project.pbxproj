@@ -743,7 +743,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prismslight.fa0001;
 				PRODUCT_NAME = mephistopheles;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -763,7 +763,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prismslight.fa0001;
 				PRODUCT_NAME = mephistopheles;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
