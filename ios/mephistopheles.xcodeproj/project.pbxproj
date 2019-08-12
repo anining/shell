@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* mephistophelesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mephistophelesTests.m */; };
 		041D8A3FBD0A4C196F545CD1 /* libPods-mephistopheles-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8186BB7FF92595CB9F5EBE15 /* libPods-mephistopheles-tvOS.a */; };
@@ -20,6 +19,30 @@
 		2DCD954D1E0B4F2C00145EB5 /* mephistophelesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mephistophelesTests.m */; };
 		426E5E9DFFBBE3FFA80CE3E5 /* libPods-mephistopheles-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 867E3A645317C5A440B07CFA /* libPods-mephistopheles-tvOSTests.a */; };
 		8BA26A4144B2CE4E7BB6B676 /* libPods-mephistopheles.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2631CCE39C4CAED89CD14C96 /* libPods-mephistopheles.a */; };
+		7150D9ABF33B457D9E49D982 /* Aileron-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 405ABF807A7E4C15A96B565F /* Aileron-Bold.otf */; };
+		BD2711F7AF1F421E8E6DAB1B /* Aileron-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77A99E007D104E009863C430 /* Aileron-Heavy.otf */; };
+		A9AC293342104745ACCEEECB /* Aileron-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1DDA49FD5D6A47C29BA827D0 /* Aileron-Thin.otf */; };
+		A3346A68E9C34F29962AE1EB /* Aileron-UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C0C0A89EA4B4D4FB6E2CBB6 /* Aileron-UltraLight.otf */; };
+		8EAFAF596F564C7FBF5A9081 /* Archivo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5EEC97E308FE420ABB434A0F /* Archivo-Bold.ttf */; };
+		B9A730B9DA004DA88A36FD68 /* Archivo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9216EA2F04A4C1C9D51FEBF /* Archivo-Medium.ttf */; };
+		C92D539AA8954EC6B1A22993 /* Archivo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 87351E62BC954841B84749D7 /* Archivo-Regular.ttf */; };
+		F4290267A26E4D47B84F636B /* CothamSans.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C673C03355149E4BDCBEAA2 /* CothamSans.otf */; };
+		45179E1CFE1A4013ACACDD57 /* IBMPlexSans-Text.otf in Resources */ = {isa = PBXBuildFile; fileRef = FD9441736D264E7FBAD7F9EE /* IBMPlexSans-Text.otf */; };
+		73D2BF93CF5B437591FB6324 /* InriaSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F24B78166624713AB960DEA /* InriaSans-Regular.otf */; };
+		85A9C00948784B1E833B0B87 /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8182822C997547C486D3EB3B /* Montserrat-SemiBold.otf */; };
+		8EEAC86E8F1541899D2F9574 /* MontserratAlternates-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1325CCE8DD49478FA2A2177D /* MontserratAlternates-Light.otf */; };
+		AA4AE240CE614809967BB237 /* MontserratAlternates-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D8BCE5B57BB14554A1023D73 /* MontserratAlternates-Regular.otf */; };
+		3D5FD32789274D2E956A775D /* OstrichSans-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 262DD80B15274669A0BE2B90 /* OstrichSans-Heavy.otf */; };
+		060178D8D7CF4D57878A243F /* Oswald-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78F416CB6FBC499D802B1B3E /* Oswald-Regular.ttf */; };
+		209979AD5CC649A696E321AF /* PlayfairDisplaySC-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5279B0FB08784C97960673E5 /* PlayfairDisplaySC-Black.otf */; };
+		197965B86B7D4417BF99A7A0 /* Poppins-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = A02E929542FD4DDBB58BBF7C /* Poppins-ExtraLight.otf */; };
+		98E6F134E0A64EA7B770B90D /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F8B84AC20FD4DC89BCEF4F7 /* Roboto-Regular.ttf */; };
+		BD9313D2CBDF45DD88203BAC /* texgyreheros-italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5D88D23DD9F442B0866BB0E6 /* texgyreheros-italic.otf */; };
+		3F6D3CF028EC446BAB5D7441 /* texgyreheros-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BB24133442A4B638EC34494 /* texgyreheros-regular.otf */; };
+		062CDE66C30641EA9247530E /* TexGyreHerosCondensed-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C680EB11275743B3892CB627 /* TexGyreHerosCondensed-Bold.otf */; };
+		131A87F07BF24F13B0798CEC /* TexGyreHerosCondensed-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BD5AF4E9F3C74C46BF22AA55 /* TexGyreHerosCondensed-Regular.otf */; };
+		C783329120704DE69A6C41EA /* TimesNewRomanPSMT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13EE2C16C63045CC957753F7 /* TimesNewRomanPSMT.ttf */; };
+		F5FEE265903449FEA3E0E45C /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D034D53C1CBB4A06BE2916A9 /* Ubuntu-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +90,30 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		FF982CB45CE5724E94D489A5 /* Pods-mephistophelesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mephistophelesTests.release.xcconfig"; path = "Target Support Files/Pods-mephistophelesTests/Pods-mephistophelesTests.release.xcconfig"; sourceTree = "<group>"; };
+		405ABF807A7E4C15A96B565F /* Aileron-Bold.otf */ = {isa = PBXFileReference; name = "Aileron-Bold.otf"; path = "../asset/font/Aileron-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		77A99E007D104E009863C430 /* Aileron-Heavy.otf */ = {isa = PBXFileReference; name = "Aileron-Heavy.otf"; path = "../asset/font/Aileron-Heavy.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1DDA49FD5D6A47C29BA827D0 /* Aileron-Thin.otf */ = {isa = PBXFileReference; name = "Aileron-Thin.otf"; path = "../asset/font/Aileron-Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4C0C0A89EA4B4D4FB6E2CBB6 /* Aileron-UltraLight.otf */ = {isa = PBXFileReference; name = "Aileron-UltraLight.otf"; path = "../asset/font/Aileron-UltraLight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5EEC97E308FE420ABB434A0F /* Archivo-Bold.ttf */ = {isa = PBXFileReference; name = "Archivo-Bold.ttf"; path = "../asset/font/Archivo-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B9216EA2F04A4C1C9D51FEBF /* Archivo-Medium.ttf */ = {isa = PBXFileReference; name = "Archivo-Medium.ttf"; path = "../asset/font/Archivo-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		87351E62BC954841B84749D7 /* Archivo-Regular.ttf */ = {isa = PBXFileReference; name = "Archivo-Regular.ttf"; path = "../asset/font/Archivo-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5C673C03355149E4BDCBEAA2 /* CothamSans.otf */ = {isa = PBXFileReference; name = "CothamSans.otf"; path = "../asset/font/CothamSans.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FD9441736D264E7FBAD7F9EE /* IBMPlexSans-Text.otf */ = {isa = PBXFileReference; name = "IBMPlexSans-Text.otf"; path = "../asset/font/IBMPlexSans-Text.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4F24B78166624713AB960DEA /* InriaSans-Regular.otf */ = {isa = PBXFileReference; name = "InriaSans-Regular.otf"; path = "../asset/font/InriaSans-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8182822C997547C486D3EB3B /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; name = "Montserrat-SemiBold.otf"; path = "../asset/font/Montserrat-SemiBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1325CCE8DD49478FA2A2177D /* MontserratAlternates-Light.otf */ = {isa = PBXFileReference; name = "MontserratAlternates-Light.otf"; path = "../asset/font/MontserratAlternates-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D8BCE5B57BB14554A1023D73 /* MontserratAlternates-Regular.otf */ = {isa = PBXFileReference; name = "MontserratAlternates-Regular.otf"; path = "../asset/font/MontserratAlternates-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		262DD80B15274669A0BE2B90 /* OstrichSans-Heavy.otf */ = {isa = PBXFileReference; name = "OstrichSans-Heavy.otf"; path = "../asset/font/OstrichSans-Heavy.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		78F416CB6FBC499D802B1B3E /* Oswald-Regular.ttf */ = {isa = PBXFileReference; name = "Oswald-Regular.ttf"; path = "../asset/font/Oswald-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5279B0FB08784C97960673E5 /* PlayfairDisplaySC-Black.otf */ = {isa = PBXFileReference; name = "PlayfairDisplaySC-Black.otf"; path = "../asset/font/PlayfairDisplaySC-Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A02E929542FD4DDBB58BBF7C /* Poppins-ExtraLight.otf */ = {isa = PBXFileReference; name = "Poppins-ExtraLight.otf"; path = "../asset/font/Poppins-ExtraLight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0F8B84AC20FD4DC89BCEF4F7 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; name = "Roboto-Regular.ttf"; path = "../asset/font/Roboto-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5D88D23DD9F442B0866BB0E6 /* texgyreheros-italic.otf */ = {isa = PBXFileReference; name = "texgyreheros-italic.otf"; path = "../asset/font/texgyreheros-italic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1BB24133442A4B638EC34494 /* texgyreheros-regular.otf */ = {isa = PBXFileReference; name = "texgyreheros-regular.otf"; path = "../asset/font/texgyreheros-regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C680EB11275743B3892CB627 /* TexGyreHerosCondensed-Bold.otf */ = {isa = PBXFileReference; name = "TexGyreHerosCondensed-Bold.otf"; path = "../asset/font/TexGyreHerosCondensed-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BD5AF4E9F3C74C46BF22AA55 /* TexGyreHerosCondensed-Regular.otf */ = {isa = PBXFileReference; name = "TexGyreHerosCondensed-Regular.otf"; path = "../asset/font/TexGyreHerosCondensed-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		13EE2C16C63045CC957753F7 /* TimesNewRomanPSMT.ttf */ = {isa = PBXFileReference; name = "TimesNewRomanPSMT.ttf"; path = "../asset/font/TimesNewRomanPSMT.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D034D53C1CBB4A06BE2916A9 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; name = "Ubuntu-Light.ttf"; path = "../asset/font/Ubuntu-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +228,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				07EEA4A325340C3C535FBED8 /* Pods */,
+				F5ABAF3FEA6F4950A5AC5402 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -197,6 +245,38 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		F5ABAF3FEA6F4950A5AC5402 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				405ABF807A7E4C15A96B565F /* Aileron-Bold.otf */,
+				77A99E007D104E009863C430 /* Aileron-Heavy.otf */,
+				1DDA49FD5D6A47C29BA827D0 /* Aileron-Thin.otf */,
+				4C0C0A89EA4B4D4FB6E2CBB6 /* Aileron-UltraLight.otf */,
+				5EEC97E308FE420ABB434A0F /* Archivo-Bold.ttf */,
+				B9216EA2F04A4C1C9D51FEBF /* Archivo-Medium.ttf */,
+				87351E62BC954841B84749D7 /* Archivo-Regular.ttf */,
+				5C673C03355149E4BDCBEAA2 /* CothamSans.otf */,
+				FD9441736D264E7FBAD7F9EE /* IBMPlexSans-Text.otf */,
+				4F24B78166624713AB960DEA /* InriaSans-Regular.otf */,
+				8182822C997547C486D3EB3B /* Montserrat-SemiBold.otf */,
+				1325CCE8DD49478FA2A2177D /* MontserratAlternates-Light.otf */,
+				D8BCE5B57BB14554A1023D73 /* MontserratAlternates-Regular.otf */,
+				262DD80B15274669A0BE2B90 /* OstrichSans-Heavy.otf */,
+				78F416CB6FBC499D802B1B3E /* Oswald-Regular.ttf */,
+				5279B0FB08784C97960673E5 /* PlayfairDisplaySC-Black.otf */,
+				A02E929542FD4DDBB58BBF7C /* Poppins-ExtraLight.otf */,
+				0F8B84AC20FD4DC89BCEF4F7 /* Roboto-Regular.ttf */,
+				5D88D23DD9F442B0866BB0E6 /* texgyreheros-italic.otf */,
+				1BB24133442A4B638EC34494 /* texgyreheros-regular.otf */,
+				C680EB11275743B3892CB627 /* TexGyreHerosCondensed-Bold.otf */,
+				BD5AF4E9F3C74C46BF22AA55 /* TexGyreHerosCondensed-Regular.otf */,
+				13EE2C16C63045CC957753F7 /* TimesNewRomanPSMT.ttf */,
+				D034D53C1CBB4A06BE2916A9 /* Ubuntu-Light.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -285,7 +365,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -338,6 +418,30 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				7150D9ABF33B457D9E49D982 /* Aileron-Bold.otf in Resources */,
+				BD2711F7AF1F421E8E6DAB1B /* Aileron-Heavy.otf in Resources */,
+				A9AC293342104745ACCEEECB /* Aileron-Thin.otf in Resources */,
+				A3346A68E9C34F29962AE1EB /* Aileron-UltraLight.otf in Resources */,
+				8EAFAF596F564C7FBF5A9081 /* Archivo-Bold.ttf in Resources */,
+				B9A730B9DA004DA88A36FD68 /* Archivo-Medium.ttf in Resources */,
+				C92D539AA8954EC6B1A22993 /* Archivo-Regular.ttf in Resources */,
+				F4290267A26E4D47B84F636B /* CothamSans.otf in Resources */,
+				45179E1CFE1A4013ACACDD57 /* IBMPlexSans-Text.otf in Resources */,
+				73D2BF93CF5B437591FB6324 /* InriaSans-Regular.otf in Resources */,
+				85A9C00948784B1E833B0B87 /* Montserrat-SemiBold.otf in Resources */,
+				8EEAC86E8F1541899D2F9574 /* MontserratAlternates-Light.otf in Resources */,
+				AA4AE240CE614809967BB237 /* MontserratAlternates-Regular.otf in Resources */,
+				3D5FD32789274D2E956A775D /* OstrichSans-Heavy.otf in Resources */,
+				060178D8D7CF4D57878A243F /* Oswald-Regular.ttf in Resources */,
+				209979AD5CC649A696E321AF /* PlayfairDisplaySC-Black.otf in Resources */,
+				197965B86B7D4417BF99A7A0 /* Poppins-ExtraLight.otf in Resources */,
+				98E6F134E0A64EA7B770B90D /* Roboto-Regular.ttf in Resources */,
+				BD9313D2CBDF45DD88203BAC /* texgyreheros-italic.otf in Resources */,
+				3F6D3CF028EC446BAB5D7441 /* texgyreheros-regular.otf in Resources */,
+				062CDE66C30641EA9247530E /* TexGyreHerosCondensed-Bold.otf in Resources */,
+				131A87F07BF24F13B0798CEC /* TexGyreHerosCondensed-Regular.otf in Resources */,
+				C783329120704DE69A6C41EA /* TimesNewRomanPSMT.ttf in Resources */,
+				F5FEE265903449FEA3E0E45C /* Ubuntu-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
