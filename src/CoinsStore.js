@@ -3,7 +3,7 @@ import { Fragment } from "react"
 import * as U from "karet.util"
 import * as R from "kefir.ramda"
 import {
-  StyleSheet, View, Image, Text, ScrollView, TouchableOpacity, Alert,
+  StyleSheet, View, Image, Text, TouchableOpacity, Alert,
   ActivityIndicator, Animated
 } from "react-native"
 import {
@@ -25,6 +25,14 @@ const skus = [
   "com.prismslight.fa0001_04",
   "com.prismslight.fa0001_05",
 ]
+const amounts = {
+  "com.prismslight.fa0001_00": 100,
+  "com.prismslight.fa0001_01": 520,
+  "com.prismslight.fa0001_02": 1200,
+  "com.prismslight.fa0001_03": 2500,
+  "com.prismslight.fa0001_04": 7500,
+  "com.prismslight.fa0001_05": 18000,
+}
 
 const _S = StyleSheet.create({
   coinsCountText: {
@@ -137,11 +145,7 @@ function Products({ state }) {
           <Animated.ScrollView style={[S.flex, productsStyle]}>
             <View style={_S.products} karet-lift>
               { U.mapElemsWithIds("productId", (product, id) => {
-                const amount = U.thru(
-                  product,
-                  U.view("description"),
-                  U.mapValue(parseInt),
-                )
+                const amount = amounts[id]
                 const price = U.view("localizedPrice", product)
 
                 return (

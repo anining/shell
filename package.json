@@ -5,7 +5,8 @@
   "scripts": {
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "run-ios": "ENVFILE=node_modules/diablo/config/.local.env react-native run-ios"
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.6.1",
