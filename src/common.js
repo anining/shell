@@ -81,6 +81,11 @@ const BGS = [
   { id: 33, source: require("../asset/bg/bgimg_33.jpg"), locked: true },
   { id: 34, source: require("../asset/bg/bgimg_34.jpg"), locked: true },
   { id: 35, source: require("../asset/bg/bgimg_35.jpg"), locked: true },
+  { id: 36, source: require("../asset/bg/bgimg_36.jpg"), locked: true },
+  { id: 37, source: require("../asset/bg/bgimg_37.jpg"), locked: true },
+  { id: 38, source: require("../asset/bg/bgimg_38.jpg"), locked: true },
+  { id: 39, source: require("../asset/bg/bgimg_39.jpg"), locked: true },
+  { id: 40, source: require("../asset/bg/bgimg_40.jpg"), locked: true },
 ]
 export function getBgs() {
   return BGS
