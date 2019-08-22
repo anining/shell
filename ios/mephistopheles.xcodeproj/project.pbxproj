@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* mephistophelesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mephistophelesTests.m */; };
 		041D8A3FBD0A4C196F545CD1 /* libPods-mephistopheles-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8186BB7FF92595CB9F5EBE15 /* libPods-mephistopheles-tvOS.a */; };
@@ -44,6 +43,7 @@
 		C92D539AA8954EC6B1A22993 /* Archivo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 87351E62BC954841B84749D7 /* Archivo-Regular.ttf */; };
 		F4290267A26E4D47B84F636B /* CothamSans.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C673C03355149E4BDCBEAA2 /* CothamSans.otf */; };
 		F5FEE265903449FEA3E0E45C /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D034D53C1CBB4A06BE2916A9 /* Ubuntu-Light.ttf */; };
+		03B9EC2A5BBE44878EADF05B /* AvenirNextCondensed-Regular.ttc in Resources */ = {isa = PBXBuildFile; fileRef = EE15ABF0396144C7A9632397 /* AvenirNextCondensed-Regular.ttc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +115,7 @@
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		FD9441736D264E7FBAD7F9EE /* IBMPlexSans-Text.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "IBMPlexSans-Text.otf"; path = "../asset/font/IBMPlexSans-Text.otf"; sourceTree = "<group>"; };
 		FF982CB45CE5724E94D489A5 /* Pods-mephistophelesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mephistophelesTests.release.xcconfig"; path = "Target Support Files/Pods-mephistophelesTests/Pods-mephistophelesTests.release.xcconfig"; sourceTree = "<group>"; };
+		EE15ABF0396144C7A9632397 /* AvenirNextCondensed-Regular.ttc */ = {isa = PBXFileReference; name = "AvenirNextCondensed-Regular.ttc"; path = "../node_modules/diablo/asset/font/AvenirNextCondensed-Regular.ttc"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +274,7 @@
 				BD5AF4E9F3C74C46BF22AA55 /* TexGyreHerosCondensed-Regular.otf */,
 				13EE2C16C63045CC957753F7 /* TimesNewRomanPSMT.ttf */,
 				D034D53C1CBB4A06BE2916A9 /* Ubuntu-Light.ttf */,
+				EE15ABF0396144C7A9632397 /* AvenirNextCondensed-Regular.ttc */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -445,6 +447,7 @@
 				131A87F07BF24F13B0798CEC /* TexGyreHerosCondensed-Regular.otf in Resources */,
 				C783329120704DE69A6C41EA /* TimesNewRomanPSMT.ttf in Resources */,
 				F5FEE265903449FEA3E0E45C /* Ubuntu-Light.ttf in Resources */,
+				03B9EC2A5BBE44878EADF05B /* AvenirNextCondensed-Regular.ttc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

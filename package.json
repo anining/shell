@@ -10,6 +10,7 @@
   "dependencies": {
     "@react-native-community/async-storage": "^1.6.1",
     "@react-native-community/cameraroll": "^1.1.1",
+    "crypto-js": "^3.1.9-1",
     "diablo": "https://git.dev.tencent.com/BurningLutz/diablo.git",
     "karet": "^4.1.0",
     "karet.util": "^0.19.1",
@@ -22,6 +23,7 @@
     "react-native-config": "https://github.com/luggit/react-native-config.git#89a602b",
     "react-native-gesture-handler": "^1.3.0",
     "react-native-iap": "^3.3.9",
+    "react-native-idfa": "^4.1.0",
     "react-native-linear-gradient": "^2.5.6",
     "react-native-svg": "^9.6.2",
     "react-native-view-shot": "^3.0.2",

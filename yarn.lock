@@ -846,9 +846,9 @@
   integrity sha512-1WA28xfdhG+unkTEk/lXnqI2izv6belo0CYw7UdvaeHm8TIYT6eTmIIdGR7oiCa2xSKEnaPQqRMH6h7gyLNbww==
 
 "@react-native-community/cameraroll@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@react-native-community/cameraroll/-/cameraroll-1.1.1.tgz#656b831c331b29c0f1f32137485310b38d2aa098"
-  integrity sha512-cvJewReV2l65exdsccveqnqXHGFuTgwdbjr+0MASxq6zQ+eeHLx9g/wYk8YrXHWXJqf5B/jZnNDpcg/y23atmw==
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@react-native-community/cameraroll/-/cameraroll-1.2.1.tgz#68ae3a1de07dd5db8ce9d898057f30c1585c7f1d"
+  integrity sha512-dMvzCano5/ltQYbF4AOEHe0vaW3Owt05S4y+gJ6PlBp2/YfQAVv7XNgvsvF2CKz4oPKuZAOchENDV/J+nbMbWg==
 
 "@react-native-community/cli-platform-android@^2.0.1", "@react-native-community/cli-platform-android@^2.8.3":
   version "2.8.3"
@@ -1994,6 +1994,11 @@ cross-spawn@^6.0.0, cross-spawn@^6.0.5:
     shebang-command "^1.2.0"
     which "^1.2.9"
 
+crypto-js@^3.1.9-1:
+  version "3.1.9-1"
+  resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-3.1.9-1.tgz#fda19e761fc077e01ffbfdc6e9fdfc59e8806cd8"
+  integrity sha1-/aGedh/Ad+Af+/3G6f38WeiAbNg=
+
 cssom@0.3.x, "cssom@>= 0.3.2 < 0.4.0":
   version "0.3.8"
   resolved "https://registry.yarnpkg.com/cssom/-/cssom-0.3.8.tgz#9f1276f5b2b463f2114d3f2c75250af8c1a36f4a"
@@ -2145,8 +2150,8 @@ detect-newline@^2.1.0:
   integrity sha1-9B8cEL5LAOh7XxPaaAdZ8sW/0+I=
 
 "diablo@https://git.dev.tencent.com/BurningLutz/diablo.git":
-  version "0.0.1"
-  resolved "https://git.dev.tencent.com/BurningLutz/diablo.git#0809649baf8bdb3b9bda72e389a0fb99c726b180"
+  version "0.1.0"
+  resolved "https://git.dev.tencent.com/BurningLutz/diablo.git#d632a17c5649ae2b0cac125622c2436dd6bbaccc"
 
 diff-sequences@^24.3.0:
   version "24.3.0"
@@ -5422,6 +5427,11 @@ react-native-iap@^3.3.9:
   integrity sha512-td23Dm/irLq5CEXUBuXx5KcmoAkFZM4q3z+gv/eYtMQ3wjBIiZTm3JyS8Df34J2MTKrzg57sGFcwtHVo6v6Vew==
   dependencies:
     dooboolab-welcome "^1.1.0"
+
+react-native-idfa@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-idfa/-/react-native-idfa-4.1.0.tgz#88d56223765054128e287d8e26c3abc04242d13b"
+  integrity sha512-jxiww2T9zt5Gaj/h0CHdmXzASgz+X5WAZIoU4heX799lpT7uKBQIMGgCsaJ5iZwEEnwTSERiNropR7sOrZHkCQ==
 
 react-native-linear-gradient@^2.5.6:
   version "2.5.6"
