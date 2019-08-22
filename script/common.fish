@@ -1,5 +1,5 @@
 function get_info_plist
-  realpath ./ios/diablo/Info.plist
+  realpath ./ios/mephistopheles/Info.plist
 end
 
 function get_plist_key
