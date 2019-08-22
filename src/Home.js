@@ -380,7 +380,7 @@ function Category({ pulledOut = U.atom(false), navigation, categories }) {
   }
 
   function toCategoryDetail(category) {
-		U.view(["categoryDetail", "category"], C.gstate).set(category)
+    U.view(["categoryDetail", "category"], C.gstate).set(category)
     navigation.navigate("CategoryDetail")
   }
 
