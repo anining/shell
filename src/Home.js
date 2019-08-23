@@ -348,7 +348,6 @@ const PureCategoryCard = U.pure(({ onPress, title, ...rest }) => CategoryCard({
 }))
 
 function Category({ pulledOut = U.atom(false), navigation, categories }) {
-  pulledOut.set(true)
   const animationProgress = new Animated.Value(pulledOut.get() ? 1 : 0)
   const arrowRotation = animationProgress.interpolate({
     inputRange: [0, 1],
@@ -377,11 +376,13 @@ function Category({ pulledOut = U.atom(false), navigation, categories }) {
       animationProgress.setValue(p > 1 ? 1 : p < 0 ? 0 : p)
     },
     onPanResponderTerminationRequest: () => true,
-    onPanResponderRelease: (evt, { dy }) => {
+    onPanResponderRelease: (evt, { dy, vy }) => {
       if (Math.abs(dy) < 40) {
         progressTo(0)
+      } else if (vy > 0) {
+        progressTo(0, -vy / 416)
       } else {
-        toggleCategory()
+        progressTo(1, -vy / 416)
       }
     }
   })
@@ -396,24 +397,33 @@ function Category({ pulledOut = U.atom(false), navigation, categories }) {
       animationProgress.setValue(p > 1 ? 1 : p < 0 ? 0 : p)
     },
     onPanResponderTerminationRequest: () => true,
-    onPanResponderRelease: (evt, { dy }) => {
+    onPanResponderRelease: (evt, { dy, vy }) => {
       if (Math.abs(dy) < 40) {
         progressTo(1)
+      } else if (vy > 0) {
+        progressTo(0, -vy / 416)
       } else {
-        toggleCategory()
+        progressTo(1, -vy / 416)
       }
     }
   })
 
-  function progressTo(n) {
-    Animated.timing(
+  function progressTo(n, velocity = 0) {
+    if (n === 0) {
+      scrollRef.scrollToIndex({ index: 0 })
+    }
+
+    const anime = Animated.spring(
       animationProgress,
       {
+        velocity,
         toValue: n,
-        duration: 300,
+        overshootClamping: true,
         useNativeDriver: true
       }
-    ).start()
+    )
+
+    anime.start(() => pulledOut.set(n === 1))
   }
 
   function toggleCategory() {
@@ -431,10 +441,7 @@ function Category({ pulledOut = U.atom(false), navigation, categories }) {
         { U.consume(
           R.ifElse(R.identity,
             () => progressTo(1),
-            () => {
-              progressTo(0)
-              scrollRef.scrollToIndex({ index: 0 })
-            }
+            () => progressTo(0)
           ),
           U.changes(pulledOut)
         ) }
