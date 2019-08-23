@@ -1,8 +1,5 @@
-import * as React from "karet"
-import { Fragment } from "karet"
 import * as U from "karet.util"
 import * as R from "kefir.ramda"
-import * as L from "partial.lenses"
 import { Alert } from "react-native"
 
 import QUOTES from "./quotes.json"

@@ -92,7 +92,7 @@ export function showProcessingModal() {
 
 export async function hideProcessingModal() {
   toggleProcessingModal(false)
-  return new Promise((rs, _) => setTimeout(rs, 100))
+  return new Promise((rs) => setTimeout(rs, 100))
 }
 
 export function showInfoModal(text) {

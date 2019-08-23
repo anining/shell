@@ -1,5 +1,4 @@
 import * as React from "karet"
-import * as U from "karet.util"
 import { Component } from "react"
 import * as R from "kefir.ramda"
 import { Image, ImageBackground, View, Text, TextInput, StyleSheet } from "react-native"
@@ -239,63 +238,63 @@ export function Layout3({ author, content, onChangeContent, contentStyle, image,
 
 // a native react component to work-around react-native-svg issue
 export class Layout4 extends Component {
-	constructor() {
-		super()
-		this.state = {
-			width: 0,
-			height: 0,
-		}
-	}
+  constructor() {
+    super()
+    this.state = {
+      width: 0,
+      height: 0,
+    }
+  }
 
-	setSvgDimension(e) {
-		this.setState({
-			width: e.nativeEvent.layout.width,
-			height: e.nativeEvent.layout.height,
-		})
-	}
+  setSvgDimension(e) {
+    this.setState({
+      width: e.nativeEvent.layout.width,
+      height: e.nativeEvent.layout.height,
+    })
+  }
 
-	render() {
-		const { author, content, onChangeContent, contentStyle, image, editable, editing, onFocus } = this.props
-		const { width, height } = this.state
+  render() {
+    const { author, content, onChangeContent, contentStyle, image, editable, editing, onFocus } = this.props
+    const { width, height } = this.state
 
-		return (
-			<View style={[S.flex, _S.layout4]}>
-				<View style={S.flex} onLayout={e => this.setSvgDimension(e)}>
-					<Svg
-						width={`${width}`}
-						height={`${height}`}
-						viewBox={`0 0 ${width} ${height}`}
-					>
-						<Defs>
-							<ClipPath id="clip">
-								<Polygon points={`0 0 ${width} 0 ${width} ${height} 0 ${R.subtract(height, 115)}` } />
-							</ClipPath>
-						</Defs>
+    return (
+      <View style={[S.flex, _S.layout4]}>
+        <View style={S.flex} onLayout={e => this.setSvgDimension(e)}>
+          <Svg
+            width={`${width}`}
+            height={`${height}`}
+            viewBox={`0 0 ${width} ${height}`}
+          >
+            <Defs>
+              <ClipPath id="clip">
+                <Polygon points={`0 0 ${width} 0 ${width} ${height} 0 ${R.subtract(height, 115)}` } />
+              </ClipPath>
+            </Defs>
 
-						<SvgImage
-							x="0%"
-							y="0%"
-							width="100%"
-							height="100%"
-							href={image}
-							preserveAspectRatio="xMidYMid slice"
-							clipPath="url(#clip)"
-						/>
-					</Svg>
-				</View>
-				<MyTextInput
-					style={[_S.input, _S.input4, contentStyle]}
-					onChangeText={onChangeContent}
-					editable={editable}
-					editing={editing}
-					onFocus={onFocus}
-				>
-					<Text style={_S.content}>{content}</Text>
-				</MyTextInput>
-				<Text style={[_S.author, _S.author4]}>{author}</Text>
-			</View>
-		)
-	}
+            <SvgImage
+              x="0%"
+              y="0%"
+              width="100%"
+              height="100%"
+              href={image}
+              preserveAspectRatio="xMidYMid slice"
+              clipPath="url(#clip)"
+            />
+          </Svg>
+        </View>
+        <MyTextInput
+          style={[_S.input, _S.input4, contentStyle]}
+          onChangeText={onChangeContent}
+          editable={editable}
+          editing={editing}
+          onFocus={onFocus}
+        >
+          <Text style={_S.content}>{content}</Text>
+        </MyTextInput>
+        <Text style={[_S.author, _S.author4]}>{author}</Text>
+      </View>
+    )
+  }
 }
 
 export function Layout5({ author, content, onChangeContent, contentStyle, image, editable, editing, onFocus }) {

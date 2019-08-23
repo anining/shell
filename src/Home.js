@@ -5,7 +5,7 @@ import * as R from "kefir.ramda"
 import * as L from "partial.lenses"
 import {
   StyleSheet, Text, View, TouchableWithoutFeedback, Image,
-  TouchableOpacity, ImageBackground, Animated, FlatList, Linking
+  TouchableOpacity, ImageBackground, Animated, FlatList, Linking, PanResponder
 } from "react-native"
 
 import Header from "./Header"
@@ -303,7 +303,7 @@ function DailyCard({ image, content, author }) {
   )
 }
 
-function FoldButton({ onPress, arrowRotation }) {
+function FoldButton({ onPress, arrowRotation, ...rest }) {
   const arrowImageStyle = {
     transform: [
       { rotateX: arrowRotation }
@@ -311,17 +311,19 @@ function FoldButton({ onPress, arrowRotation }) {
   }
 
   return (
-    <TouchableWithoutFeedback onPress={onPress}>
-      <View style={[S.flexRow, S.alignCenter, S.justifyCenter, _S.categoryFoldButtonPanel]}>
-        <View style={[S.flexRow, S.alignCenter, _S.categoryFoldButton]}>
-          <Text style={[S.avenir, _S.categoryFoldButtonText]}>Category</Text>
-          <Animated.Image
-            source={require("../asset/image/varrow.png")}
-            style={[_S.categoryFoldButtonArrow, arrowImageStyle]}
-          />
+    <View {...rest}>
+      <TouchableWithoutFeedback onPress={onPress}>
+        <View style={[S.flexRow, S.alignCenter, S.justifyCenter, _S.categoryFoldButtonPanel]}>
+          <View style={[S.flexRow, S.alignCenter, _S.categoryFoldButton]}>
+            <Text style={[S.avenir, _S.categoryFoldButtonText]}>Category</Text>
+            <Animated.Image
+              source={require("../asset/image/varrow.png")}
+              style={[_S.categoryFoldButtonArrow, arrowImageStyle]}
+            />
+          </View>
         </View>
-      </View>
-    </TouchableWithoutFeedback>
+      </TouchableWithoutFeedback>
+    </View>
   )
 }
 
@@ -346,6 +348,7 @@ const PureCategoryCard = U.pure(({ onPress, title, ...rest }) => CategoryCard({
 }))
 
 function Category({ pulledOut = U.atom(false), navigation, categories }) {
+  pulledOut.set(true)
   const animationProgress = new Animated.Value(pulledOut.get() ? 1 : 0)
   const arrowRotation = animationProgress.interpolate({
     inputRange: [0, 1],
@@ -363,6 +366,44 @@ function Category({ pulledOut = U.atom(false), navigation, categories }) {
   }
 
   let scrollRef = null
+
+  const mainPanResponder = PanResponder.create({
+    // Ask to be the responder:
+    onStartShouldSetPanResponder: () => !pulledOut.get(),
+    onMoveShouldSetPanResponder: () => !pulledOut.get(),
+
+    onPanResponderMove: (evt, { dy }) => {
+      const p = -dy / 416
+      animationProgress.setValue(p > 1 ? 1 : p < 0 ? 0 : p)
+    },
+    onPanResponderTerminationRequest: () => true,
+    onPanResponderRelease: (evt, { dy }) => {
+      if (Math.abs(dy) < 40) {
+        progressTo(0)
+      } else {
+        toggleCategory()
+      }
+    }
+  })
+
+  const btnPanResponder = PanResponder.create({
+    // Ask to be the responder:
+    onStartShouldSetPanResponder: () => pulledOut.get(),
+    onMoveShouldSetPanResponder: () => pulledOut.get(),
+
+    onPanResponderMove: (evt, { dy }) => {
+      const p = 1 - dy / 416
+      animationProgress.setValue(p > 1 ? 1 : p < 0 ? 0 : p)
+    },
+    onPanResponderTerminationRequest: () => true,
+    onPanResponderRelease: (evt, { dy }) => {
+      if (Math.abs(dy) < 40) {
+        progressTo(1)
+      } else {
+        toggleCategory()
+      }
+    }
+  })
 
   function progressTo(n) {
     Animated.timing(
@@ -385,7 +426,7 @@ function Category({ pulledOut = U.atom(false), navigation, categories }) {
   }
 
   return (
-    <Animated.View style={[_S.category, categoryTranslateStyle]}>
+    <Animated.View style={[_S.category, categoryTranslateStyle]} {...mainPanResponder.panHandlers}>
       <Fragment>
         { U.consume(
           R.ifElse(R.identity,
@@ -399,7 +440,7 @@ function Category({ pulledOut = U.atom(false), navigation, categories }) {
         ) }
       </Fragment>
 
-      <FoldButton onPress={toggleCategory} arrowRotation={arrowRotation} />
+      <FoldButton onPress={toggleCategory} arrowRotation={arrowRotation} {...btnPanResponder.panHandlers} />
       <FlatList
         karet-lift
         ref={ref => scrollRef = ref}

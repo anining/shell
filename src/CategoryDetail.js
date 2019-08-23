@@ -91,10 +91,10 @@ function Quote({ lines, locked, onPress, children, style }) {
 }
 
 function Quotes({ navigation, state, resource, userData }) {
-	const { category } = U.destructure(state)
+  const { category } = U.destructure(state)
   const { quotes } = U.destructure(resource)
   const { coins, unlockedQuotes } = U.destructure(userData)
-	
+  
   const rawQuotes = U.thru(
     quotes,
     U.view(category),
@@ -119,13 +119,13 @@ function Quotes({ navigation, state, resource, userData }) {
       }
     }
 
-		U.holding(() => {
-			// clear quote editor state
-			const quoteEditor = U.view("quoteEditor", C.gstate)
-			quoteEditor.remove()
-			quoteEditor.view("content").set(content)
-			quoteEditor.view("author").set(author)
-		})
+    U.holding(() => {
+      // clear quote editor state
+      const quoteEditor = U.view("quoteEditor", C.gstate)
+      quoteEditor.remove()
+      quoteEditor.view("content").set(content)
+      quoteEditor.view("author").set(author)
+    })
     navigation.navigate("QuoteEditor")
   }
 
@@ -189,7 +189,7 @@ export default function CategoryDetail({
   resource = U.view("resource", C.gstate),
   userData = U.view("userData", C.gstate),
 }) {
-	const { category } = U.destructure(state)
+  const { category } = U.destructure(state)
   const { quotes } = U.destructure(resource)
   const quotesCount = U.thru(
     quotes,
