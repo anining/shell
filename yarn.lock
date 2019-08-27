@@ -2151,7 +2151,7 @@ detect-newline@^2.1.0:
 
 "diablo@https://git.dev.tencent.com/BurningLutz/diablo.git":
   version "0.1.0"
-  resolved "https://git.dev.tencent.com/BurningLutz/diablo.git#a8ff8787c7159171c44d8ea6a389ac8b175cd117"
+  resolved "https://git.dev.tencent.com/BurningLutz/diablo.git#976674e713440939c3a6f1e02ad1def0bbcd080b"
 
 diff-sequences@^24.3.0:
   version "24.3.0"
