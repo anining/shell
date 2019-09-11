@@ -5433,6 +5433,11 @@ react-native-idfa@^4.1.0:
   resolved "https://registry.yarnpkg.com/react-native-idfa/-/react-native-idfa-4.1.0.tgz#88d56223765054128e287d8e26c3abc04242d13b"
   integrity sha512-jxiww2T9zt5Gaj/h0CHdmXzASgz+X5WAZIoU4heX799lpT7uKBQIMGgCsaJ5iZwEEnwTSERiNropR7sOrZHkCQ==
 
+react-native-kochava-tracker@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-kochava-tracker/-/react-native-kochava-tracker-1.1.0.tgz#3bb336c83fa007c7ff5a74727ce5dd5768f01db7"
+  integrity sha512-Xvx7GHHRBTwdqwEzacOGjxrAHBplNkORhJ8tMJNqZMztPwsRPfD/hT+R/hgi9iUMXInWJwUTA4LE+j/KHljCrg==
+
 react-native-linear-gradient@^2.5.6:
   version "2.5.6"
   resolved "https://registry.yarnpkg.com/react-native-linear-gradient/-/react-native-linear-gradient-2.5.6.tgz#96215cbc5ec7a01247a20890888aa75b834d44a0"

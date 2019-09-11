@@ -89,6 +89,7 @@ const _S = StyleSheet.create({
   dailyCard: {
     marginHorizontal: 36,
     marginTop: 16,
+    zIndex: 0,
   },
   dailyCardBg: {
     borderRadius: 20,
