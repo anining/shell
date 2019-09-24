@@ -262,7 +262,7 @@ function PopupMenu({ visible, navigation, browser = U.view("browser", C.gstate) 
         <PopupMenuItem onPress={doNavigate("CoinsStore")}>Coins Store</PopupMenuItem>
         <PopupMenuItem
           onPress={U.actions(
-            () => setBrowserUri("https://frederickboom.com/ios-terms-of-use.pdf", "Terms of Use"),
+            () => setBrowserUri("https://www.frederickboom.com/terms_of_use.html", "Terms of Use"),
             doNavigate("Browser"),
           )}
         >
@@ -270,7 +270,7 @@ function PopupMenu({ visible, navigation, browser = U.view("browser", C.gstate) 
         </PopupMenuItem>
         <PopupMenuItem
           onPress={U.actions(
-            () => setBrowserUri("https://frederickboom.com/ios-privacy-policy.pdf", "Privacy Policy"),
+            () => setBrowserUri("https://www.frederickboom.com/privacy_policy.html", "Privacy Policy"),
             doNavigate("Browser"),
           )}
         >
