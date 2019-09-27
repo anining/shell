@@ -2149,9 +2149,9 @@ detect-newline@^2.1.0:
   resolved "https://registry.yarnpkg.com/detect-newline/-/detect-newline-2.1.0.tgz#f41f1c10be4b00e87b5f13da680759f2c5bfd3e2"
   integrity sha1-9B8cEL5LAOh7XxPaaAdZ8sW/0+I=
 
-"diablo@https://git.dev.tencent.com/BurningLutz/diablo.git":
+"diablo@https://e.coding.net/prismslight/diablo.git#0.1.0":
   version "0.1.0"
-  resolved "https://git.dev.tencent.com/BurningLutz/diablo.git#8c983ad6da65f04a16bae0375f3b7bc98aa4a345"
+  resolved "https://e.coding.net/prismslight/diablo.git#1d39bfaadf9ef7cf7d09a927a3c00b5b9cd592a8"
 
 diff-sequences@^24.3.0:
   version "24.3.0"
