@@ -5456,6 +5456,11 @@ react-native-safe-area-view@^0.14.1:
   dependencies:
     debounce "^1.2.0"
 
+react-native-send-intent@^1.0.31:
+  version "1.0.31"
+  resolved "https://registry.yarnpkg.com/react-native-send-intent/-/react-native-send-intent-1.0.31.tgz#2703b07964a9af6e65642aa7f2eaed5229297313"
+  integrity sha512-K4cfYXM9TY0W+Jv8n49VJN+qDgld2PRynkjiRroNfS+oCa/iecrsP/6GkMS6n+vVLBBapEdI0cP9mIK6CfE8nw==
+
 react-native-svg-transformer@^0.13.0:
   version "0.13.0"
   resolved "https://registry.yarnpkg.com/react-native-svg-transformer/-/react-native-svg-transformer-0.13.0.tgz#ec0913f76d58c4df7092f52c98e8db368e5f894f"

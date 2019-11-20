@@ -7,7 +7,7 @@
     "test": "jest",
     "lint": "eslint .",
     "run-ios": "ENVFILE=node_modules/diablo/config/.local.env react-native run-ios",
-    "run-and": "./script/run_android.fish"
+    "run-and": "ENVFILE=node_modules/diablo/config/.local.env ./script/run_android.fish"
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.6.1",
@@ -28,6 +28,7 @@
     "react-native-idfa": "^4.1.0",
     "react-native-kochava-tracker": "https://git.dev.tencent.com/BurningLutz/react-native-kochava-tracker.git#1.1.0",
     "react-native-linear-gradient": "^2.5.6",
+    "react-native-send-intent": "^1.0.31",
     "react-native-svg": "^9.6.2",
     "react-native-view-shot": "^3.0.2",
     "react-native-webview": "^6.9.0",
