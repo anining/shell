@@ -35,12 +35,12 @@ android_library(
 
 android_build_config(
     name = "build_config",
-    package = "com.mephistopheles",
+    package = "com.prismslight.fb0001",
 )
 
 android_resource(
     name = "res",
-    package = "com.mephistopheles",
+    package = "com.prismslight.fb0001",
     res = "src/main/res",
 )
 

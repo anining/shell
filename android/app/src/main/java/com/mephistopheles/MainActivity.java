@@ -1,4 +1,4 @@
-package com.mephistopheles;
+package com.prismslight.fb0001;
 
 import com.facebook.react.ReactActivity;
 

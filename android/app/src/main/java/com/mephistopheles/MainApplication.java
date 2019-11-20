@@ -1,4 +1,4 @@
-package com.mephistopheles;
+package com.prismslight.fb0001;
 
 import android.app.Application;
 import android.util.Log;
