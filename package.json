@@ -6,8 +6,9 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "run-ios": "ENVFILE=node_modules/diablo/config/.local.env react-native run-ios",
-    "run-and": "ENVFILE=node_modules/diablo/config/.local.env ./script/run_android.fish"
+    "run-ios": "./script/run_ios.fish",
+    "run-android": "./script/run_android.fish",
+    "run-android:release": "./script/run_android_release.fish"
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.6.1",
