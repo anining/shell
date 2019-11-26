@@ -237,6 +237,16 @@ export default function CoinsStore({
       hideProcessingModal()
       showInfoModal("Purchased")
     }
+
+    // simply finish current purchase no matter whether it is successful
+    if (Platform.OS === "ios") {
+      RNIap.finishTransactionIOS(purchase.transactionId)
+    } else if (Platform.OS === "android") {
+      // If consumable (can be purchased again)
+      RNIap.consumePurchaseAndroid(purchase.purchaseToken)
+      // If not consumable
+      RNIap.acknowledgePurchaseAndroid(purchase.purchaseToken)
+    }
   })
   const errorListener = purchaseErrorListener(async () => {
     await hideProcessingModal()
