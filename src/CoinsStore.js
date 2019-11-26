@@ -4,7 +4,7 @@ import * as U from "karet.util"
 import * as R from "kefir.ramda"
 import {
   StyleSheet, View, Image, Text, TouchableOpacity, Alert,
-  ActivityIndicator, Animated
+  ActivityIndicator, Animated, Platform
 } from "react-native"
 import {
   initConnection, purchaseErrorListener, purchaseUpdatedListener, getProducts,
@@ -17,22 +17,43 @@ import SafeArea from "./SafeArea"
 import { showProcessingModal, hideProcessingModal, showInfoModal } from "./Modal"
 import S, { square, padding, posShadow } from "./style"
 
-const skus = [
-  "com.prismslight.fa0001_00",
-  "com.prismslight.fa0001_01",
-  "com.prismslight.fa0001_02",
-  "com.prismslight.fa0001_03",
-  "com.prismslight.fa0001_04",
-  "com.prismslight.fa0001_05",
-]
-const amounts = {
-  "com.prismslight.fa0001_00": 100,
-  "com.prismslight.fa0001_01": 520,
-  "com.prismslight.fa0001_02": 1200,
-  "com.prismslight.fa0001_03": 2500,
-  "com.prismslight.fa0001_04": 7500,
-  "com.prismslight.fa0001_05": 18000,
-}
+const skus = Platform.select({
+  ios: [
+    "com.prismslight.fa0001_00",
+    "com.prismslight.fa0001_01",
+    "com.prismslight.fa0001_02",
+    "com.prismslight.fa0001_03",
+    "com.prismslight.fa0001_04",
+    "com.prismslight.fa0001_05",
+  ],
+  android: [
+    "com.prismslight.fb0001_00",
+    "com.prismslight.fb0001_01",
+    "com.prismslight.fb0001_02",
+    "com.prismslight.fb0001_03",
+    "com.prismslight.fb0001_04",
+    "com.prismslight.fb0001_05",
+  ]
+})
+
+const amounts = Platform.select({
+  ios: {
+    "com.prismslight.fa0001_00": 100,
+    "com.prismslight.fa0001_01": 520,
+    "com.prismslight.fa0001_02": 1200,
+    "com.prismslight.fa0001_03": 2500,
+    "com.prismslight.fa0001_04": 7500,
+    "com.prismslight.fa0001_05": 18000,
+  },
+  android: {
+    "com.prismslight.fb0001_00": 100,
+    "com.prismslight.fb0001_01": 520,
+    "com.prismslight.fb0001_02": 1200,
+    "com.prismslight.fb0001_03": 2500,
+    "com.prismslight.fb0001_04": 7500,
+    "com.prismslight.fb0001_05": 18000,
+  }
+})
 
 const _S = StyleSheet.create({
   coinsCountText: {
