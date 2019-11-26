@@ -36,7 +36,6 @@ export default S
 
 export let headerCommonStyle = [S.mainBackground, { borderBottomWidth: 0 }]
 export let headerLeftContainerStyle = {
-  paddingLeft: 25
 }
 export let headerRightContainerStyle = {
   paddingRight: 25
