@@ -233,7 +233,7 @@ function PopupMenu({ visible, navigation, browser = U.view("browser", C.gstate) 
   }
 
   function contactUs() {
-    Linking.openURL("mailto:linhai@prismslight.com?subject=%5BCalendar%20Quotes%5D")
+    Linking.openURL("mailto:dextersup@outlook.com?subject=%5BCalendar%20Quotes%5D")
   }
 
   return (
