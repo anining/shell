@@ -16,10 +16,15 @@ function Main() {
   U.scope(async () => {
     let canOpenIns = false
 
-    if (Platform.OS === "android") {
-      canOpenIns = await SendIntentAndroid.isAppInstalled("com.instagram.android")
-    } else if (Platform.OS === "ios") {
-      canOpenIns = await Linking.canOpenURL("instagram://app")
+    switch (Platform.OS) {
+      case "android":
+        canOpenIns = await SendIntentAndroid.isAppInstalled("com.instagram.android")
+        break
+      case "ios":
+        canOpenIns = await Linking.canOpenURL("instagram://app")
+        break
+      default:
+        throw new Error("not supported platform")
     }
 
     if (canOpenIns) {
