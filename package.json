@@ -8,7 +8,8 @@
     "lint": "eslint .",
     "run-ios": "./script/run_ios.fish",
     "run-android": "./script/run_android.fish",
-    "run-android:release": "./script/run_android_release.fish"
+    "run-android:release": "./script/run_android_release.fish",
+    "postversion": "react-native-version"
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.6.1",
@@ -44,6 +45,7 @@
     "jest": "^24.8.0",
     "metro-react-native-babel-preset": "^0.55.0",
     "react-native-svg-transformer": "^0.13.0",
+    "react-native-version": "^3.2.0",
     "react-test-renderer": "16.8.6"
   },
   "jest": {
