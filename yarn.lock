@@ -2149,9 +2149,9 @@ detect-newline@^2.1.0:
   resolved "https://registry.yarnpkg.com/detect-newline/-/detect-newline-2.1.0.tgz#f41f1c10be4b00e87b5f13da680759f2c5bfd3e2"
   integrity sha1-9B8cEL5LAOh7XxPaaAdZ8sW/0+I=
 
-"diablo@https://e.coding.net/prismslight/diablo.git#0.1.0":
-  version "0.1.0"
-  resolved "https://e.coding.net/prismslight/diablo.git#1d39bfaadf9ef7cf7d09a927a3c00b5b9cd592a8"
+"diablo@https://e.coding.net/prismslight/diablo.git#0.1.1":
+  version "0.1.1"
+  resolved "https://e.coding.net/prismslight/diablo.git#39ab80d26b0ebfe3d20c1038e14ed5c623cbb15c"
 
 diff-sequences@^24.3.0:
   version "24.3.0"
@@ -2184,12 +2184,10 @@ domexception@^1.0.1:
   dependencies:
     webidl-conversions "^4.0.2"
 
-dooboolab-welcome@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/dooboolab-welcome/-/dooboolab-welcome-1.1.0.tgz#4a0aa9d2cbc4e2b1008bf7683bc056b41caa3d0d"
-  integrity sha512-K9TKEeefzDXZiUyLZG+bIr8cy9UoYIfFMseowp/o3czVl7TfkVm3gQpeB85w+TO8xeqzWHiIcEelZbBgt5WUwQ==
-  dependencies:
-    chalk "^2.4.1"
+dooboolab-welcome@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/dooboolab-welcome/-/dooboolab-welcome-1.1.1.tgz#ca2184f6e1f568865d707a6ce3bda7e003550f54"
+  integrity sha512-tQ/9NBCGnalHwKOBjDqTD4t4wQpDfSSbxQGctzkzaLHR3AhN0wCBkIs05JciVtvl/jfLZ+DgAndktAMk3Bu7Vw==
 
 ecc-jsbn@~0.1.1:
   version "0.1.2"
@@ -5421,12 +5419,12 @@ react-native-gesture-handler@^1.3.0:
     invariant "^2.2.2"
     prop-types "^15.5.10"
 
-react-native-iap@^3.3.9:
-  version "3.3.9"
-  resolved "https://registry.yarnpkg.com/react-native-iap/-/react-native-iap-3.3.9.tgz#581c1b0453bf5339603891926f4c34a589f2ade6"
-  integrity sha512-td23Dm/irLq5CEXUBuXx5KcmoAkFZM4q3z+gv/eYtMQ3wjBIiZTm3JyS8Df34J2MTKrzg57sGFcwtHVo6v6Vew==
+react-native-iap@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/react-native-iap/-/react-native-iap-4.3.0.tgz#ed37d8a59d7df9fdc64e0c873a1808183a27b822"
+  integrity sha512-l8d1405YcNfVHJTtqAVO/S1RPkwsNtm+SNaSfz4ptTj0AEigCMTtHSqQOe3HIgqdS9hBC+hG/9dmQaO5iquAZA==
   dependencies:
-    dooboolab-welcome "^1.1.0"
+    dooboolab-welcome "^1.1.1"
 
 react-native-idfa@^4.1.0:
   version "4.1.0"
