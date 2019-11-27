@@ -1,6 +1,6 @@
 {
   "name": "mephistopheles",
-  "version": "0.0.1",
+  "version": "1.0.8",
   "private": true,
   "scripts": {
     "start": "react-native start",
